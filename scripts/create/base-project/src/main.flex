@@ -1,6 +1,6 @@
 %{
 
-}%
+%}
 
 %option noyywrap
 
