@@ -6,16 +6,23 @@
 
 %option noyywrap
 
-target	[a-zA-Z]+
+target	^(\(?([\+\-]?[0-9]+(\.[0-9]+)?)(\)+)?([\+\-\/\*\^]|rad)?)+$
 
 %%
 
 {target}	{
-		/* here matchs! */
+		printf("valid expresion\n");
+	}
+
+.+	{
+		printf("unvalid expresion\n");
 	}
 
 %%
 
 int main(int argc, char *argv[]) {
-	printf("hello world!");
+	// Look for terminal input
+	yylex();
+
+	printf("calculator end :)\n");
 }

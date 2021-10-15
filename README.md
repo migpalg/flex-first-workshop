@@ -20,4 +20,3 @@ cd workshop/{project_name}
 make #build the project
 make run
 ```
-
