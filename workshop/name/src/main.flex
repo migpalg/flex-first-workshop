@@ -14,8 +14,8 @@ target	^([a-z]{3,}[ ]){2,}[a-z]{3,}$
 		printf("valid name! :)\n");
 	}
 
-.+	
-		printf("unvalid name");
+.+		{
+		printf("unvalid name\n");
 	}
 
 %%
