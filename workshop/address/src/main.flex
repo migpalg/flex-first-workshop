@@ -6,7 +6,7 @@
 
 %option noyywrap
 
-target	^(carrera|calle|avenida|transversal)[ ]?([0-9]+(sur|norte|[a-z])?)[ ]?#?[ ]?([0-9]+(sur|norte|[a-z])?)[ ]?\-?[ ]?([0-9]+(sur|norte|[a-z])?)$
+target	^(carrera|calle|avenida|transversal|circular)[ ]?([0-9]+(sur|norte|[a-z])?)[ ]?#?[ ]?([0-9]+(sur|norte|[a-z])?)[ ]?\-?[ ]?([0-9]+(sur|norte|[a-z])?)$
 
 %%
 
