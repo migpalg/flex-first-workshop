@@ -1,9 +1,11 @@
 %{
-#include "Parser.h"
+#include "Parser.tab.h"
 %}
 
 blanks          [ \t\n]+
 identifier		[_a-zA-Z0-9]+
+
+%option noyywrap
 
 %%
 
