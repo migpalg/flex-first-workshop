@@ -21,6 +21,7 @@ target	^([a-z]{3,}[ ]){2,}[a-z]{3,}$
 %%
 
 int main(int argc, char *argv[]) {
+	yylex();
 	printf("end\n");
 }
 
